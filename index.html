@@ -2,43 +2,78 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Un pequeño gesto, un gran cambio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reciclaje con Estilo ♻️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="intro" id="intro">
+    🌱 ¡Bienvenido a EcoFachero! ♻️
+  </div>
+
   <header>
-    <h1>Un pequeño gesto, un gran cambio</h1>
-    <p>Clasificá los residuos según el color del tacho correspondiente ♻️</p>
+    Reciclá con estilo: Separá tu basura 🌎
   </header>
 
-  <main>
-    <section class="bin-section green">
-      <h2>Verde</h2>
-      <p>txt</p>
-    </section>
+  <section>
+    <div class="bin plastico" data-target="info-plastico">
+      <img src="https://cdn-icons-png.flaticon.com/512/2909/2909808.png" alt="Plástico">
+      <h3>Plásticos</h3>
+      <p>Botellas, tapas, envases limpios.</p>
+    </div>
+    <div class="bin papel" data-target="info-papel">
+      <img src="https://cdn-icons-png.flaticon.com/512/809/809957.png" alt="Papel">
+      <h3>Papel</h3>
+      <p>Hojas, diarios, revistas.</p>
+    </div>
+    <div class="bin carton" data-target="info-carton">
+      <img src="https://cdn-icons-png.flaticon.com/512/1541/1541322.png" alt="Cartón">
+      <h3>Cartón</h3>
+      <p>Cajas limpias y secas.</p>
+    </div>
+    <div class="bin vidrio" data-target="info-vidrio">
+      <img src="https://cdn-icons-png.flaticon.com/512/3771/3771545.png" alt="Vidrio">
+      <h3>Vidrio</h3>
+      <p>Frascos y botellas de vidrio.</p>
+    </div>
+    <div class="bin metal" data-target="info-metal">
+      <img src="https://cdn-icons-png.flaticon.com/512/1046/1046875.png" alt="Metal">
+      <h3>Metal</h3>
+      <p>Latas, tapitas metálicas.</p>
+    </div>
+  </section>
 
-    <section class="bin-section blue">
-      <h2>Azul</h2>
-      <p>txt</p>
-    </section>
+  <!-- Secciones de información -->
+  <div id="info-plastico" class="info-section plastico">
+    <h2>Plásticos</h2>
+    <p>infooo</p>
+  </div>
 
-    <section class="bin-section yellow">
-      <h2>Amarillo</h2>
-      <p>txt</p>
-    </section>
+  <div id="info-papel" class="info-section papel">
+    <h2>Papel</h2>
+    <p>infooo</p>
+  </div>
 
-    <section class="bin-section red">
-      <h2>Rojo - Residuos peligrosos</h2>
-      <p>txt</p>
-    </section>
+  <div id="info-carton" class="info-section carton">
+    <h2>Cartón</h2>
+    <p>infooo</p>
+  </div>
 
-  </main>
+  <div id="info-vidrio" class="info-section vidrio">
+    <h2>Vidrio</h2>
+    <p>infooo</p>
+  </div>
+
+  <div id="info-metal" class="info-section metal">
+    <h2>Metal</h2>
+    <p>infooo</p>
+  </div>
 
   <footer>
-    <p>&copy; 2025 - Conciencia ambiental</p>
+    Hecho con amor por el planeta 🌍 | #RecicláConFacha
   </footer>
 
-  <script src="main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
