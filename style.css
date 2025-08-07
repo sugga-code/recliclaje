@@ -2,47 +2,97 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f4f1;
-  color: #333;
-  line-height: 1.6;
+  background: linear-gradient(to bottom, #d9fdd3, #ffffff);
+  overflow-x: hidden;
+}
+
+.intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #a8e6cf;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  z-index: 9999;
+  animation: fadeOut 2s ease-in-out 3s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 header {
-  background-color: #2e7d32;
-  color: white;
   padding: 2rem;
   text-align: center;
+  background-color: #81c784;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-header h1 {
-  font-size: 2.5rem;
+section {
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.01);
+}
+
+.bin {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bin:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3);
+}
+
+.plastico { background-color: #0288d1; }
+.papel { background-color: #fbc02d; color: #333; }
+.carton { background-color: #8d6e63; }
+.vidrio { background-color: #388e3c; }
+.metal { background-color: #616161; }
+
+.bin img {
+  width: 100px;
+  height: auto;
   margin-bottom: 1rem;
 }
 
-main {
-  padding: 2rem;
-}
-
-.bin-section {
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  color: white;
-}
-
-.green { background-color: #4caf50; }
-.blue { background-color: #2196f3; }
-.yellow { background-color: #ffeb3b; color: #000; }
-.red { background-color: #f44336; }
-.black { background-color: #212121; }
-
 footer {
-  background-color: #2e7d32;
-  color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
+  background-color: #a5d6a7;
+  font-weight: bold;
+  color: #2e7d32;
 }
